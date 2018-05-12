@@ -1,20 +1,26 @@
 CXX=clang++-5.0
 CXXFLAGS=-std=c++17
+# A generic makefile for running single-file C++ projects.
+#
+# AUTHOR: Erel Segal-Halevi
 
-all: Board.o Node.o
+CXX=clang++-5.0
+RM=rm -f
+CPPFLAGS=-std=c++17
 
-Board.o: Board.cpp Board.h
-	$(CXX) $(CXXFLAGS) -c Board.cpp -o Board.o
+ifndef MAIN
+  MAIN=./main.cpp
+endif
 
-Node.o: Node.cpp Node.h
-	$(CXX) $(CXXFLAGS) -c Node.cpp -o Node.o
+MAINEXECUTABLE=$(subst .cpp,,$(MAIN)).exe
 
-main.o: main.cpp Board.h
-	$(CXX) $(CXXFLAGS) -c main.cpp -o main.o
+SOURCES=$(MAIN)
+
+all: $(MAINEXECUTABLE)
+	$(MAINEXECUTABLE)
+
+$(MAINEXECUTABLE): $(SOURCES) $(HEADERS)
+	$(CXX) $(CPPFLAGS) $(SOURCES) -o $(MAINEXECUTABLE)
 
 clean:
-	rm *.o a.out
-
-buildAndRun: all main.o
-	$(CXX) $(CXXFLAGS) Board.o Node.o main.o
-	./a.out
+	$(RM) *.exe a.out *.class

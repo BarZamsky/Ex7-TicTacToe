@@ -34,3 +34,10 @@ Node& Node::operator=(char val)
         throw ex;
     }
 }
+
+Coordinate::Coordinate(int xVal, yVal):x(xVal),y(yVal) {}
+
+void Coordinate::setXY(int xVal, int yVal) {
+    x= xVal;
+    y=yVal;
+}

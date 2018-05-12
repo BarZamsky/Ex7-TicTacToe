@@ -18,8 +18,19 @@ public:
     void setC(char c);
     operator char() const { return val; }
 };
+
 inline ostream& operator<< (ostream& os, Node& n)
 {
     os << n.getNode();
     return os;
 }
+
+class Coordinate
+{
+    int x,y;
+public:
+    Coordinate(int xVal, yVal);
+    void setXY(int xVal,int yVal);
+    int getX()const {return x;}
+    int geyY()const {return y;}
+};
