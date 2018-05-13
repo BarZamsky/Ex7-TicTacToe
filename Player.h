@@ -1,7 +1,7 @@
 //
 // Created by bar on 12/05/18.
 //
-
+#pragma once
 #include "Board.h"
 #include <string>
 

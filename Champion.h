@@ -1,6 +1,7 @@
 //
 // Created by bar on 11/05/18.
 //
+#pragma  once
 #include "Player.h"
 
 class Champion : public Player
