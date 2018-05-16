@@ -38,11 +38,11 @@ Board::~Board()
     }
     delete[] game;
 }
-Node &Board::operator[](const Coordinate& cr) const{
-    int a = cr.getX(), b = cr.getY();
+Node &Board::operator[](const Coordinate& c) const{
+    int a = c.getX(), b = c.getY();
 
     if (a < rows && a >= 0 && b < rows && b >= 0)
-        return mat[a][b];
+        return game[a][b];
     else
     {
         IllegalCoordinateException ex;
