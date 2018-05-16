@@ -56,7 +56,7 @@ bool TicTacToe::checkWinner(Player &p)
         b = true;
         for(int j = 0; j<game.size() ; j++)
         {
-            if(game[{i,j}] != p.getC()){
+            if(game[{i,j}] != p.getChar()){
                 b = false;
                 break;
             }
@@ -65,7 +65,7 @@ bool TicTacToe::checkWinner(Player &p)
         b = true;
         for(int j = 0; j<game.size() ; j++)
         {
-            if(game[{j,i}] != p.getC()){
+            if(game[{j,i}] != p.getChar()){
                 b = false;
                 break;
             }
@@ -75,7 +75,7 @@ bool TicTacToe::checkWinner(Player &p)
     b = true;
     for(int i = 0; i< game.size() ; i++)
     {
-        if(game[{i,i}] != p.getC()){
+        if(game[{i,i}] != p.getChar()){
             b = false;
             break;
         }
@@ -84,7 +84,7 @@ bool TicTacToe::checkWinner(Player &p)
     b = true;
     for(int i = 0; i< game.size() ; i++)
     {
-        if(game[{game.size()-i-1,i}] != p.getC()){
+        if(game[{game.size()-i-1,i}] != p.getChar()){
             b = false;
             break;
         }
