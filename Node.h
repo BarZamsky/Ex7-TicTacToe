@@ -32,5 +32,5 @@ public:
     Coordinate(int xVal,int yVal);
     void setXY(int xVal,int yVal);
     int getX()const {return x;}
-    int geyY()const {return y;}
+    int getY()const {return y;}
 };

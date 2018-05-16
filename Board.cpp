@@ -41,7 +41,7 @@ Board::~Board()
 Node &Board::operator[](const Coordinate& cr) const{
     int a = cr.getX(), b = cr.getY();
 
-    if (a < n && a >= 0 && b < n && b >= 0)
+    if (a < rows && a >= 0 && b < rows && b >= 0)
         return mat[a][b];
     else
     {
