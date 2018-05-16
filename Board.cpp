@@ -38,8 +38,20 @@ Board::~Board()
     }
     delete[] game;
 }
+Node &Board::operator[](const Coordinate& cr) const{
+    int a = cr.getX(), b = cr.getY();
 
-Node& Board::operator[](list<int> list)
+    if (a < n && a >= 0 && b < n && b >= 0)
+        return mat[a][b];
+    else
+    {
+        IllegalCoordinateException ex;
+        ex.setA(a);
+        ex.setB(b);
+        throw ex;
+    }
+}
+/*Node& Board::operator[](list<int> list)
 {
     int a = list.front(), b=list.back();
     if(a<0 || a>=rows || b<0 || b>=rows)
@@ -49,7 +61,7 @@ Node& Board::operator[](list<int> list)
         throw ex;
     }
     return game[a][b];
-}
+}*/
 
 Board& Board::operator=(const Board &b)
 {
@@ -103,4 +115,9 @@ ostream &operator<<(ostream& out, const Board& b)
         out << endl;
     }
     return out;
+}
+
+int Board::size() const
+{
+    return this->rows;
 }

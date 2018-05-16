@@ -1,5 +1,3 @@
-CXX=clang++-5.0
-CXXFLAGS=-std=c++17
 # A generic makefile for running single-file C++ projects.
 #
 # AUTHOR: Erel Segal-Halevi

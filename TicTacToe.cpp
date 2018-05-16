@@ -27,10 +27,10 @@ void TicTacToe::play(Player &xPlayer, Player &oPlayer)
             if(game[r]=='.')
                 game[r] = xPlayer.getChar();
             else
-            {winner = &oPlayer; return;}
+            {win = &oPlayer; return;}
         }
         catch(const string& msg) {win = &oPlayer; return;}
-        if(checkWin(xPlayer)) { win = &xPlayer; return;}
+        if(checkWinner(xPlayer)) { win = &xPlayer; return;}
         count++;
         if(count < game.size()*game.size()){
             try{
@@ -38,17 +38,17 @@ void TicTacToe::play(Player &xPlayer, Player &oPlayer)
                 if(game[r]=='.')
                     game[r] = oPlayer.getChar();
                 else
-                {winner = &xPlayer; return;}
+                {win = &xPlayer; return;}
             }
             catch(const string& msg) {win = &xPlayer; return;}
 
-            if(checkWin(oPlayer)) { win= &oPlayer; return;}
+            if(checkWinner(oPlayer)) { win= &oPlayer; return;}
             count++;
         }
     }
     win = &oPlayer;
 }
-bool TicTacToe::ifWin(Player &p)
+bool TicTacToe::checkWinner(Player &p)
 {
     bool b = true;
     for(int i = 0; i< game.size() ; i++)
