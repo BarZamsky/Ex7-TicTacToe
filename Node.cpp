@@ -35,9 +35,9 @@ Node& Node::operator=(char val)
     }
 }
 
-Coordinate::Coordinate(uint xVal,uint yVal):x(xVal),y(yVal) {}
+Coordinate::Coordinate(int xVal,int yVal):x(xVal),y(yVal) {}
 
-void Coordinate::setXY(uint xVal, uint yVal) {
+void Coordinate::setXY(int xVal, int yVal) {
     x= xVal;
     y=yVal;
 }

@@ -39,7 +39,7 @@ Board::~Board()
     delete[] game;
 }
 Node &Board::operator[](const Coordinate& c) const{
-    uint a = c.getX(), b = c.getY();
+    int a = c.getX(), b = c.getY();
 
     if (a < rows && a >= 0 && b < rows && b >= 0)
         return game[a][b];
