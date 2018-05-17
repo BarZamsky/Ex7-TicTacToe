@@ -8,6 +8,7 @@
 class TicTacToe{
 public:
     Board game;
+    int _size;
     Player* champion; // the winner
 
 public:
