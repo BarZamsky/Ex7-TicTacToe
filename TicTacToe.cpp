@@ -77,7 +77,6 @@ bool TicTacToe::checkWinner(char c)
         }
         if(winning)
             return true;
-
         winning = true;
         for(uint j = 0; j<game.size() ; j++)
         {
