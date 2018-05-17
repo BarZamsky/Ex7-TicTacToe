@@ -8,12 +8,13 @@
 class TicTacToe{
 public:
     Board game;
-    Player* win;
-    bool checkWinner(Player &p);
+    Player* champion; // the winner
+
 public:
     TicTacToe(int n);
     Board board() const;
     Player& winner() const;
     void play(Player& xPlayer, Player& oPlayer);
+    bool checkWinner(char c);
 
 };

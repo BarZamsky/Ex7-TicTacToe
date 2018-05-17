@@ -12,83 +12,102 @@ Board TicTacToe::board() const
 }
 Player& TicTacToe::winner() const
 {
-    return *win;
+    return *champion;
 }
 
 void TicTacToe::play(Player &xPlayer, Player &oPlayer)
 {
-    game ='.';
+    this->game ='.'; // initial empty board
+    int s = game.size()*game.size();
     int count = 0;
     xPlayer.setChar('X');
     oPlayer.setChar('O');
-    while(count < game.size()*game.size()){
+    Coordinate c(0,0);
+    while(count < s){
         try{
-            Coordinate r = xPlayer.play(game);
-            if(game[r]=='.')
+            c.setCoordinate(xPlayer.play(game));
+            if(game[c]=='.')
                 game[r] = xPlayer.getChar();
-            else
-            {win = &oPlayer; return;}
+            else{
+                champion = &oPlayer; return;
+            }
         }
-        catch(const string& msg) {win = &oPlayer; return;}
-        if(checkWinner(xPlayer)) { win = &xPlayer; return;}
+        catch(const string& msg) {
+            champion = &oPlayer; return;
+        }
+
+        if(checkWinner('X')) {
+            champion = &xPlayer; return;
+        }
         count++;
-        if(count < game.size()*game.size()){
+        if(count < s){
             try{
-                Coordinate r = oPlayer.play(game);
+                c.setCoordinate(oPlayer.play(game));
                 if(game[r]=='.')
                     game[r] = oPlayer.getChar();
-                else
-                {win = &xPlayer; return;}
+                else{
+                    champion = &xPlayer; return;
+                }
             }
-            catch(const string& msg) {win = &xPlayer; return;}
+            catch(const string& msg) {
+                champion = &xPlayer; return;
+            }
 
-            if(checkWinner(oPlayer)) { win= &oPlayer; return;}
+            if(checkWinner('O')) {
+                champion= &oPlayer; return;
+            }
             count++;
         }
     }
-    win = &oPlayer;
+    champion = &oPlayer;
 }
-bool TicTacToe::checkWinner(Player &p)
+bool TicTacToe::checkWinner(char c)
 {
-    bool b = true;
-    for(int i = 0; i< game.size() ; i++)
+    bool winning = true;
+
+    for(uint i = 0; i< game.size() ; i++)
     {
-        b = true;
-        for(int j = 0; j<game.size() ; j++)
+        winning = true;
+        for(uint j = 0; j<game.size() ; j++)
         {
-            if(game[{i,j}] != p.getChar()){
-                b = false;
+            if(game[{i,j}] != c){
+                winning = false;
                 break;
             }
         }
-        if(b == true) return true;
-        b = true;
-        for(int j = 0; j<game.size() ; j++)
+        if(winning)
+            return true;
+
+        winning = true;
+        for(uint j = 0; j<game.size() ; j++)
         {
-            if(game[{j,i}] != p.getChar()){
-                b = false;
+            if(game[{j,i}] != c){
+                winning = false;
                 break;
             }
         }
-        if(b == true) return true;
+        if(winning)
+            return true;
     }
-    b = true;
-    for(int i = 0; i< game.size() ; i++)
+    winning = true;
+    for(uint i = 0; i< game.size() ; i++)
     {
-        if(game[{i,i}] != p.getChar()){
-            b = false;
+        if(game[{i,i}] != c){
+            winning = false;
             break;
         }
     }
-    if(b == true) return true;
-    b = true;
-    for(int i = 0; i< game.size() ; i++)
+    if(winning)
+        return true;
+    winning = true;
+    for(uint i = 0; i< game.size() ; i++)
     {
-        if(game[{game.size()-i-1,i}] != p.getChar()){
-            b = false;
+        if(game[{game.size()-i-1,i}] != c){
+            winning = false;
             break;
         }
     }
-    if(b == true) return true;
+    if(winning)
+        return true;
     return false;
 }
