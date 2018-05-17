@@ -5,9 +5,10 @@
 const Coordinate Champion::play(const Board& board) {
     for (uint x=0; x<board.size(); ++x) {
         uint t = board.size()-1-x;
+        uint s = board.size()-1;
         Coordinate c{t,x};
-        if(x==1 && board[{0,t}] == '.')
-            c.setRow(0); c.setCol(board.size()-1);
+        if(x==1 && board[{0,s}] == '.')
+            c.setRow(0); c.setCol(s);
         if(board[c]=='.') {
             return c;
         }
