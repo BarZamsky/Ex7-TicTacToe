@@ -41,7 +41,7 @@ Board::~Board()
 Node &Board::operator[](const Coordinate& c) const{
     int a = c.getRow(), b = c.getCol();
 
-    if (a < rows && a >= 0 && b < rows && b >= 0)
+    if (a < rows && b < rows)
         return game[a][b];
     else
     {
@@ -51,17 +51,17 @@ Node &Board::operator[](const Coordinate& c) const{
         throw ex;
     }
 }
-/*Node& Board::operator[](list<int> list)
+Node& Board::operator[](list<uint> list)
 {
     int a = list.front(), b=list.back();
-    if(a<0 || a>=rows || b<0 || b>=rows)
+    if(a>=rows || b>=rows)
     {
         IllegalCoordinateException ex;
         ex.setA(a); ex.setB(b);
         throw ex;
     }
     return game[a][b];
-}*/
+}
 
 Board& Board::operator=(const Board &b)
 {

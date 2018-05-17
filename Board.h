@@ -17,8 +17,8 @@ public:
     Board(int r);
     Board(const Board& other);
     ~Board();
-    //Node& operator[](list<int> list);
-    Node &operator[](const Coordinate& cr) const;
+    Node& operator[](list<uint> list);
+    Node& operator[](const Coordinate& c) const;
     Board& operator=(const Board& b);
     Board& operator=(char c);
     int size() const;

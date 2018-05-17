@@ -31,8 +31,8 @@ class Coordinate
 public:
     Coordinate(uint x,uint y);
     void setCoordinate(Coordinate c);
-    int getRow()const {return row;}
-    int getCol()const {return col;}
+    uint getRow()const {return row;}
+    uint getCol()const {return col;}
     void setRow(uint x) { row=x;}
     void setCol(uint y) { col=y;}
 };
