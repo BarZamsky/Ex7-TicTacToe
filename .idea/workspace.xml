@@ -10,9 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="217a8193-2142-449d-902c-9feae41438bb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Board.h" beforeDir="false" afterPath="$PROJECT_DIR$/Board.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Champion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Champion.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Champion.h" beforeDir="false" afterPath="$PROJECT_DIR$/Champion.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,20 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Champion.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Champion.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Champion.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="84">
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Board.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Board.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="114" column="17" lean-forward="true" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+            <state relative-caret-position="56">
+              <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -69,8 +67,8 @@
         <option value="$PROJECT_DIR$/TicTacToe.h" />
         <option value="$PROJECT_DIR$/TicTacToe.cpp" />
         <option value="$PROJECT_DIR$/Champion.h" />
-        <option value="$PROJECT_DIR$/Champion.cpp" />
         <option value="$PROJECT_DIR$/Board.h" />
+        <option value="$PROJECT_DIR$/Champion.cpp" />
       </list>
     </option>
   </component>
@@ -157,12 +155,12 @@
       <workItem from="1526126847177" duration="3223000" />
       <workItem from="1526226670160" duration="2184000" />
       <workItem from="1526503429234" duration="1226000" />
-      <workItem from="1526547061532" duration="4966000" />
+      <workItem from="1526547061532" duration="5078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13632000" />
+    <option name="totallyTimeSpent" value="13744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="889" height="925" extended-state="6" />
@@ -174,7 +172,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5677656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.5166873" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -436,17 +434,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Champion.cpp">
+    <entry file="file://$PROJECT_DIR$/Board.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="56">
+          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Board.cpp">
+    <entry file="file://$PROJECT_DIR$/Champion.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="114" column="17" lean-forward="true" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+        <state relative-caret-position="84">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
         </state>
       </provider>
     </entry>
