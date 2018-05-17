@@ -11,9 +11,11 @@ using namespace std;
 
 class Board
 {
-public:
+private:
     int rows;
     Node **game;
+
+public:
     Board(int r);
     Board(const Board& other);
     ~Board();
