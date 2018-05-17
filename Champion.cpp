@@ -4,8 +4,9 @@
 #include "Champion.h"
 const Coordinate Champion::play(const Board& board) {
     for (uint x=0; x<board.size(); ++x) {
-        Coordinate c{board.size()-1-x,x};
-        if(x==1 && board[{0,board.size()-1}] == '.')
+        uint t = board.size()-1-x;
+        Coordinate c{t,x};
+        if(x==1 && board[{0,t}] == '.')
             c.setRow(0); c.setCol(board.size()-1);
         if(board[c]=='.') {
             return c;
