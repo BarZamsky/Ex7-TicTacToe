@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="217a8193-2142-449d-902c-9feae41438bb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Champion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Champion.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,6 +30,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DummyPlayers.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DummyPlayers.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TicTacToe.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TicTacToe.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-308">
+              <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Board.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Board.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -39,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Board.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Board.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
+            <state relative-caret-position="364">
               <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
             </state>
           </provider>
@@ -70,7 +88,6 @@
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Champion.h" />
         <option value="$PROJECT_DIR$/Node.cpp" />
-        <option value="$PROJECT_DIR$/TicTacToe.cpp" />
         <option value="$PROJECT_DIR$/TicTacToe.h" />
         <option value="$PROJECT_DIR$/DummyPlayers.h" />
         <option value="$PROJECT_DIR$/DummyPlayers.cpp" />
@@ -78,6 +95,7 @@
         <option value="$PROJECT_DIR$/Board.h" />
         <option value="$PROJECT_DIR$/Board.cpp" />
         <option value="$PROJECT_DIR$/Champion.cpp" />
+        <option value="$PROJECT_DIR$/TicTacToe.cpp" />
       </list>
     </option>
   </component>
@@ -164,12 +182,12 @@
       <workItem from="1526126847177" duration="3223000" />
       <workItem from="1526226670160" duration="2184000" />
       <workItem from="1526503429234" duration="1226000" />
-      <workItem from="1526547061532" duration="2102000" />
+      <workItem from="1526547061532" duration="2202000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10768000" />
+    <option name="totallyTimeSpent" value="10868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="889" height="925" extended-state="6" />
@@ -384,13 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DummyPlayers.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Node.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1148">
@@ -405,13 +416,6 @@
           <folding>
             <element signature="e#50#68#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TicTacToe.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1484">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -452,8 +456,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Board.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
+        <state relative-caret-position="364">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DummyPlayers.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTacToe.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
         </state>
       </provider>
     </entry>
